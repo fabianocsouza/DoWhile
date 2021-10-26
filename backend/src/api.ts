@@ -37,4 +37,4 @@ api.get('/signin/callback', (request, response) => {
   response.json(code);
 })
 
-serverHttp.listen(3333, () => console.log('Server is running on PORT 3333 🚀'));
+serverHttp.listen(4000, () => console.log('Server is running on PORT 4000 🚀'));
