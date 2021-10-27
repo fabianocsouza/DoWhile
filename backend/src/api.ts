@@ -35,6 +35,6 @@ api.get("/github", (request, response) => {
 api.get('/signin/callback', (request, response) => {
   const { code } = request.query;
   response.json(code);
-})
+});
 
-serverHttp.listen(4000, () => console.log('Server is running on PORT 4000 🚀'));
+export {serverHttp, io}
