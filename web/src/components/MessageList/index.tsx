@@ -4,7 +4,7 @@ import { api } from '../../services/api'
 
 import styles from './styles.module.scss'
 import logoImg from '../../assets/logo.svg'
-interface MessageUser {
+interface Message {
   id: string;
   text: string;
   user: {
@@ -13,7 +13,7 @@ interface MessageUser {
   }
 }
 export function MessageList() {
-  const [messages, setMessages] = useState<MessageUser[]>([]);
+  const [messages, setMessages] = useState<Message[]>([]);
 
   useEffect(() => {
     api.get('/messages/last3')
