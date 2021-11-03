@@ -1,10 +1,12 @@
 import React from 'react';
 import { View, Text } from 'react-native';
 
+import { styles } from './styles';
+
 export function Home() {
   return (
-    <View>
-      <Text>Hello World, React Native🚀💜</Text>
+    <View style={styles.container}>
+      <Text >Hello World, React Native🚀💜</Text>
     </View>
   );
 }
