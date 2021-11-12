@@ -17,7 +17,7 @@ export function Header() {
             Sair
           </Text>
         </TouchableOpacity>
-        <UserPhoto imageUri='https://github.com/fabianocsouza.png' />
+        <UserPhoto imageUri='https://randomuser.me/api/portraits/women/79.jpg' />
       </View>
     </View>
   );
